@@ -10,7 +10,7 @@
     "dev": "tsx watch src/server.ts",
     "test": "vitest",
     "build": "tsup src --out-dir build",
-    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex"
+    "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +20,6 @@
     "@types/supertest": "^6.0.2",
     "supertest": "^6.3.4",
     "tsup": "^8.0.2",
-    "tsx": "^4.7.1",
     "typescript": "^5.4.3"
   },
   "dependencies": {
@@ -29,6 +28,7 @@
     "fastify": "^4.26.2",
     "knex": "^3.1.0",
     "pg": "^8.11.3",
+    "tsx": "^4.7.1",
     "sqlite3": "^5.1.7",
     "vitest": "^1.4.0",
     "zod": "^3.22.4"
